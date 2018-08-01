@@ -1,0 +1,13 @@
+server :
+   port : 2021
+   
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gsrihariprasad/springcloud
+      
+          search-paths:
+          - app*
+          force-pull: true
